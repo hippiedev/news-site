@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Playfair Display", "Times New Roman", Times, serif;
+            line-height: 26px;
+        }
+        body {
+            background: #000;
+            color: #fff;
+            padding: 30px 60px;
+        }
+        h1 {
+            font-family: "Yeseva One", "Times New Roman", Times, serif;
+            padding-bottom: 20px;
+            line-height: 40px;
+        }
+        .introduction {
+            padding-bottom: 30px;
+        }
+        .response {
+            border-bottom: 1px solid #fff;
+            padding: 20px;
+        }
+        .question::after {
+            content: "--";
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oluwapeluwa Alexander Ibrahim</h1>
+
+    <p class="introduction">
+        I created a newspaper/article site with the aim of incorporating a retro-newspaper vibe with a mordern approach. I wanted it to be a merger of the old and new. I also aimed to achieve minimalism. Basically, something that looks simple and retro, but is efficient (like something modern). This approach led me to implement an in-article routing to the other articles (no archives page). This also influenced my decision to call it "The News"
+    </p>
+
+    <div class="response">
+        <p class="question">State 3 things that have inspired you when creating your website.</p>
+        <p class="answer"><ul>
+            <li>The Wall Street Journal user interface (hence my decision for the font faces)</li>
+            <li>Newspapers</li>
+            <li>Kanye West (colors and background music)</li>
+        </ul></p>
+    </div>
+    <div class="response">
+        <p class="question">State 3 ways in which your site is accessible.</p>
+        <p class="answer"><ul>
+            <li>Through the keyboard. By pressing the tab button, you can easily navigate to links and buttons and interact with them</li>
+            <li>Audio. I added audio to page 2, and page 4 includes audio-video</li>
+            <li>Font size adjustments for users with impaired vision</li>
+        </ul></p>
+    </div>
+    <div class="response">
+        <p class="question">State 3 ways in which you have considered usability in your site.</p>
+        <p class="answer"><ul>
+            <li>I considered usability for users with impaired vision</li>
+            <li>I considered usability for users that wants to quickly run through a couple of articles by including other articles at the side</li>
+            <li>I considered usability for users with impaired hearing</li>
+        </ul></p>
+    </div>
+    <div class="response">
+        <p class="question">State 3 things you had to learn/find out by yourself when creating your site, and describe
+            how you did that </p>
+        <p class="answer"><ul>
+            <li>I realised the importance of semantic HTML in user accessibility. I initially started off with mostly div tags, when pressing the tab button to inspect accessibility through the keyboard, I noticed the div elements weren't being focused on for interactions, until I changed them to their semantic counterparts</li>
+            <li>I learnt that it's best not to add the "aria-role" attribute excessively. It is best to just use the proper HTML tags.</li>
+            <li>I learnt that the JavaScript querySelector function is most convenient for selecting HTML for DOM manipulations because its paramters are similar to css selectors</li>
+        </ul></p>
+    </div>
+    <div class="response">
+        <p class="question">What aspect(s) of your work do you think worked well and why?</p>
+        <p class="answer">
+            I think the font size adjustment was a nice touch.
+            </p>
+    </div>
+    <div class="response">
+        <p class="question">What aspect(s) of your work could be improved, and how might you do things differently
+            another time?</p>
+        <p class="answer">
+            I think I can improve the user interface a bit more. I think the font I used for paragraph texts isn't so readable because it's very light. So next time, I could explore a different combination of fonts.
+            </p>
+    </div>
+    <div class="response">
+        <p class="question">What resources were used when creating your work?</p>
+        <p class="answer">
+            <ul>
+                <li>[1] africa.businessinsider.com, 'A US drone strike the military called 'righteous' mistakenly targeted an aid worker and killed 10 Afghan civilians, including 7 kids, a report says', 2021. [Online]. Available:
+                    https://africa.businessinsider.com/politics/a-us-drone-strike-the-military-called-righteous-mistakenly-targeted-an-aid-worker-and/sq8nl32. [Accessed: 12- Sep- 2021]. </li>
+                <li>[2] esl-lounge.com, 'Here Is The News - Transcript',[Online]. Available:
+                    https://www.esl-lounge.com/student/listening/3L8-here-is-the-news-transcript.php. [Accessed: 12- Sep- 2021]. </li>
+                <li>[3] scitechdaily.com, 'NASA Engineers Work To Give Satellite Swarms a Hive Mind', 2021. [Online]. Available:
+                    https://scitechdaily.com/nasa-engineers-work-to-give-satellite-swarms-a-hive-mind/. [Accessed: 12- Sep- 2021]. </li>
+                <li>[4] TORA NORTHMAN, highsnobiety.com, 'KANYE WEST'S 'DONDA' HAS ARRIVED, LISTEN HERE', 2021. [Online]. Available:
+                    https://www.highsnobiety.com/p/kanye-west-donda-album-release/. [Accessed: 12- Sep- 2021]. </li>
+
+            </ul>
+            </p>
+    </div>
+    
+</body>
+</html>

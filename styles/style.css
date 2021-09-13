@@ -1,0 +1,193 @@
+* {
+  /* reset margin and padding to 0 and restrict padding to elements' width and height */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo,
+h6 {
+  /* give all heading tags a font-family of Yeseva One */
+  font-family: "Yeseva One", "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+nav {
+  width: 100%;
+  height: fit-content;
+  background: black;
+  color: #fff;
+  padding: 30px;
+  font-size: 30px;
+}
+
+#image-description {
+  text-align: center;
+  padding: 10px;
+}
+
+.header-image {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-image p {
+  position: absolute;
+}
+main {
+  margin-top: 30px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+}
+#controls {
+  display: flex;
+  flex-direction: row;
+}
+audio {
+  position: relative;
+  left: 100px;
+  top: -5px;
+}
+.fontsize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  width: fit-content;
+  margin-bottom: 30px;
+  padding: 5px;
+  cursor: pointer;
+  height: fit-content;
+}
+.fontsize svg {
+  width: 30px;
+  height: 30px;
+}
+.font-options {
+  background: rgb(243, 243, 243);
+  width: fit-content;
+  position: absolute;
+  left: 112px;
+  bottom: -35px;
+  display: none;
+  z-index: 10;
+}
+.font-options.active {
+  display: block;
+}
+.font-options ul {
+  list-style: none;
+}
+.font-options ul li {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.font-options ul li:nth-child(even) {
+  background: #dddddd;
+}
+section.content {
+  width: 70%;
+  height: fit-content;
+}
+section.content h1 {
+  font-size: 30px;
+}
+section.content p {
+  padding: 30px 0px;
+}
+article {
+  line-height: 30px;
+  font-size: 18px;
+}
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 30px 0px;
+}
+.widget-wrap {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+article img {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+}
+article #media-description {
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+  line-height: 20px;
+}
+article::first-letter {
+  font-size: 30px;
+}
+aside {
+  width: 30%;
+  height: fit-content;
+  padding: 30px;
+}
+aside h2 {
+  padding-bottom: 10px;
+}
+
+div.article {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div.article img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0px;
+  position: relative;
+  top: 100px;
+}
+
+@media (max-width: 760px) {
+  main {
+    flex-direction: column;
+  }
+  section.content {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+  }
+  #controls {
+    flex-direction: column;
+    align-items: 0;
+  }
+  audio {
+    left: 0;
+  }
+  .font-options {
+    bottom: 130px;
+  }
+}
